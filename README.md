@@ -1,5 +1,6 @@
 # etescanner
 next generation port scanner tool
+
 -h,       --help             show this help message and exit
 
 -i IP,    --ip IP     IP     Address
@@ -12,6 +13,7 @@ next generation port scanner tool
 
 
 yeni nesil port tarama aracı
+
 -h,       --help             show this help message and exit
 
 -i IP,    --ip IP  IP        Adresi
