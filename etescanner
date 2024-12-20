@@ -14,7 +14,7 @@ print(Fore.BLUE+"""
 """+Style.RESET_ALL)
 
 
-print(Fore.RED+"[!]"+Style.RESET_ALL+" Lütfen sadece yetkinizin olduğu siteleri tarayın."+Style.RESET_ALL)
+print(Fore.RED+"[!]"+Style.RESET_ALL+" Lütfen sadece yetkinizin olduğu sistemleri tarayın."+Style.RESET_ALL)
 print(Fore.YELLOW+"[?]"+Style.RESET_ALL+" Nasıl gidiyor dostum iyimisin?"+Style.RESET_ALL)
 print(Fore.GREEN+"[©]"+Style.RESET_ALL+" by erdemskywalker"+Style.RESET_ALL)
 
@@ -29,7 +29,7 @@ top_20 = "21,22,23,25,53,80,110,111,135,139,143,443,445,993,995,1723,3306,3389,5
 def scanner(ip, port):
     try:
         scan = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        scan.settimeout(1)
+        scan.settimeout(2)
         result = scan.connect_ex((ip, port))
 
         if result == 0:
@@ -51,7 +51,7 @@ def first(ports, target,time):
 def main():
     parser = argparse.ArgumentParser(description="SCANNER...")
     parser.add_argument("-i", "--ip", required=True, help="IP Adresi")
-    parser.add_argument("-p", "--ports", help="Portları , koyarak giriniz", default=full_ports)
+    parser.add_argument("-p", "--ports", help="Portları ',' koyarak giriniz", default=full_ports)
     parser.add_argument("-t", "--time", help="eş zamanlılık", default=1)
     args = parser.parse_args()
     first(args.ports, args.ip,args.time)
