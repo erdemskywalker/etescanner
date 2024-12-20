@@ -33,7 +33,7 @@ def scanner(ip, port):
         result = scan.connect_ex((ip, port))
 
         if result == 0:
-            print(""+Fore.GREEN+" OPEN      "+Style.RESET_ALL+f"{port}   "+"Portun işlevi")
+            print(""+Fore.GREEN+" OPEN      "+Style.RESET_ALL+f"   {port}")
         
 
     except socket.error as err:
