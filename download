@@ -1,0 +1,9 @@
+ROOT
+cd /bin
+wget https://raw.githubusercontent.com/turanerdeyusuf28/etescanner/refs/heads/main/etescanner (or curl https://raw.githubusercontent.com/turanerdeyusuf28/etescanner/refs/heads/main/etescanner)
+chmod -x etescanner
+
+USER
+cd /bin
+sudo wget https://raw.githubusercontent.com/turanerdeyusuf28/etescanner/main/etescanner (or curl https://raw.githubusercontent.com/turanerdeyusuf28/etescanner/refs/heads/main/etescanner)
+sudo chmod +x etescanner
